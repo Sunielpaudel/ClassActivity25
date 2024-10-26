@@ -1,0 +1,15 @@
+# Ignore listed files and folders
+.vs/
+*.sln
+*.vcxproj*
+ClassAct.189d5ab3/
+x64/
+
+# Ignore other files if needed
+*.tmp
+*.log
+
+# Include only the specific files
+!main.cpp
+!forCustomer.hpp
+!customer.cpp
