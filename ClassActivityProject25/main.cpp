@@ -1,32 +1,18 @@
-#include <iostream>
-#include "forCustomer.hpp"
+#include "Customer.hpp"
+#include "printCustomerDetailss.hpp"
 
-using namespace CustomerStructNamespace;
+using namespace customerNamespace;
 
 int main() {
-    Customer customer;
 
-    std::cout << "Enter Customer ID: ";
-    std::cin >> customer.id;
+    Customer customer = {
+        1897,
+        "John Smith",
+        "smith.johnson@gmail.com",
+        { "456 Center street", "Berkeley", 54321 }
+    };
 
-    std::cin.ignore(); 
-
-    std::cout << "Enter Customer Name: ";
-    std::getline(std::cin, customer.name);
-
-    std::cout << "Enter Customer Email: ";
-    std::getline(std::cin, customer.email);
-
-    std::cout << "Enter Street Address: ";
-    std::getline(std::cin, customer.address.street);
-
-    std::cout << "Enter City: ";
-    std::getline(std::cin, customer.address.city);
-
-    std::cout << "Enter ZIP Code: ";
-    std::cin >> customer.address.zipCode;
-
-    customer.displayCustomer();
+    printCustomerDetails(customer);
 
     return 0;
 }

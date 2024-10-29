@@ -11,5 +11,7 @@ x64/
 
 # Include only the specific files
 !main.cpp
-!forCustomer.hpp
-!customer.cpp
+!customer.hpp
+!address.hpp
+!printCustomerDetailss.hpp
+!printCustomerDetailss.cpp
