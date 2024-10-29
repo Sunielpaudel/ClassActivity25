@@ -1,37 +1,50 @@
+# Customer Address Management Project
 
-# Customer Management System
+This project demonstrates the use of *nested structures* in C++ to model a customer and their address information. The project is organized with separate header (.hpp) and implementation (.cpp) files for modularity, and it uses a custom namespace to encapsulate the structures and functions.
 
-## Overview
+## Project Structure
 
-This project implements a simple Customer Management System in C++. It allows users to create customer records, which include personal details and an associated address. The program uses structures to represent the customer and their address, demonstrating the concept of nested structures in C++.
+The project consists of the following components:
 
-## Objectives
+- **Address structure**: Represents a customer's address, containing the street, city, and zip code.
+- **Customer structure**: Contains information about a customer, including ID, name, email, and an Address structure as a nested member.
+- **printCustomerDetails function**: Prints the details of a Customer, including address information.
+- **Namespace customerNamespace**: Encapsulates all structures and functions to avoid naming conflicts.
 
-- *Learn C++ Structures*: Understand how to define and use structures in C++.
-- *Nested Structures*: Implement and utilize nested structures to represent complex data models.
-- *User Input*: Collect user input and store it in structured data.
-- *Data Display*: Display customer details and their address in a formatted manner.
+## File Organization
 
-## Features
+- **Address.hpp**: Declares the Address structure.
+- **Customer.hpp**: Declares the Customer structure, which includes Address as a nested member.
+- **printCustomerDetailss.hpp**: Declares the printCustomerDetails function.
+- **printCustomerDetailss.cpp**: Implements the printCustomerDetails function without including .hpp files, as per the project requirement.
+- **main.cpp**: Initializes a Customer object with address information and calls printCustomerDetails.
 
-- *Customer Structure*: Represents customer details such as ID, name, and email.
-- *Address Structure*: Nested within the customer structure to represent street, city, and ZIP code.
-- *Data Entry*: Prompts the user to input customer details and address information.
-- *Data Output*: Displays all entered customer information in a clear format.
+## File Contents
 
-## File Structure
+| File                     | Description                                                                                       |
+|--------------------------|---------------------------------------------------------------------------------------------------|
+| Address.hpp            | Defines the Address structure with fields for street, city, and zip code.                       |
+| Customer.hpp           | Defines the Customer structure with fields for ID, name, email, and nested Address.           |
+| printCustomerDetails.hpp | Declares the function for printing all Customer details.                                      |
+| printCustomerDetails.cpp | Implements the printCustomerDetails function, accessing Customer and Address members.     |
+| main.cpp               | Main driver that creates a Customer and outputs details.                                        |
 
-- Customer.hpp: Header file containing declarations of the Customer and nested Address structures.
-- Customer.cpp: Source file containing the definitions of the methods for displaying customer and address details.
-- main.cpp: The main program that collects user input and invokes methods to display customer information.
+
+## Purpose
+
+This project demonstrates:
+
+- *Nested Structure*: Address is nested within Customer, illustrating C++ nesting concepts.
+- *Modular Code Organization*: Separate files for each structure and function with .hpp and .cpp separation.
+- *Namespace Usage*: Encapsulates all related code within customerNamespace to prevent naming conflicts.
 
 ## Screenshots
-![Screenshot (19)](https://github.com/user-attachments/assets/d216ac29-1b7e-41af-b6fb-917cda3da9f5)
+![Screenshot (21)](https://github.com/user-attachments/assets/901d205b-73ff-4d41-8646-877a0fcb6ef1)
 
-## Author
-**. Kailash Paudel**
+## Author 
+**.Kailash Paudel**
 
-**. 10897665.cc.peralta.edu**
+**.10897677.cc.peralta.edu**
 
 
 
